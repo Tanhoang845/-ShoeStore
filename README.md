@@ -1,24 +1,50 @@
-# README
+# 靴店を管理するアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## プログラムを実行する方
+### Windownの環境でプログラムを実行する
+1. PaizaCloudにサインアップするにサインインする
+https://paiza.cloud/ja/
 
-* Ruby version
+2. 新しいサーバを作成する
 
-* System dependencies
+3. このリポジトリをクローンする
 
-* Configuration
+4. アプリフォルダに遷移
+  - $ cd -ShoeStore 
+  
+5. 全てのGemをインストールする
+  - $ cd アプリ名
+  - $ bundle install
+  
+6. YARN をインストールする
+  - $ yarn install --check-files
+  
+7. Migrationで作成されたマイグレーションスクリプトを
+元にテーブルを作ります。  
+  - $ rake db:migrate
+  - $ rake db:seed
+  
+8. Rails アプリケーションを起動する
+  - $ rails s
 
-* Database creation
+### Linuxの環境で
+1. このリポジトリをクローンする
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2. アプリフォルダに遷移
+  - $ cd -ShoeStore 
+  
+3. 全てのGemをインストールする
+  - $ cd アプリ名
+  - $ bundle install
+  
+4. YARN をインストールする
+  - $ yarn install --check-files
+  
+5. Migrationで作成されたマイグレーションスクリプトを
+元にテーブルを作ります。  
+  - $ rake db:migrate
+  - $ rake db:seed
+  
+6. Rails アプリケーションを起動する
+  - $ rails s
